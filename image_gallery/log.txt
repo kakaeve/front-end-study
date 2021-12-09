@@ -1,3 +1,7 @@
 21.11.01
 https://to2.kr/dgX
 이미지 갤러리 사이드바 기초작업
+
+21.11.24
+https://codepen.io/zkzkdlqm/pen/vYJqOEe
+이미지 갤러리 사이드바 자바스크립트 작업
