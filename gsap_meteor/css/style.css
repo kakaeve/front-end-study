@@ -1,0 +1,50 @@
+body{
+    margin:0;
+  }
+  
+  .meteor-field{
+    background-color:black;
+    min-height:100vh;
+    overflow:hidden;
+    position:relative;
+  }
+  
+  .meteor{
+    position:absolute;
+    top:-10%;
+    left:30%;
+    width:240px;
+    height:3px;
+    transition:opacity 1s;
+    pointer-events:none;
+    transform:rotate(-45deg);
+  }
+  
+  .meteor > div > div{
+    height:1px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-image:linear-gradient(to right, #fff, #afafaf);
+  }
+  
+  .meteor > div > div:nth-child(1){
+    top:0;
+  }
+  
+  .meteor > div > div:nth-child(2){
+    top:1px;
+  }
+  
+  .meteor > div > div:nth-child(3){
+    top:2px;
+  }
+  
+  
+  .meteor > div > div:not(:nth-child(2)){
+    left:1px;
+    right:3px;
+    background-image:linear-gradient(to right, #fff, #454545);
+  }
+  

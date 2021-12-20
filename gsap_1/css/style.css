@@ -1,0 +1,123 @@
+
+
+/*gsap 기본 시작*/
+
+/*
+body {
+  margin:0;
+  background-color: #111;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.box{
+  width:100px;
+  height:100px;
+  box-sizing:border-box;
+  border:10px solid grey;
+  margin-top:300px;
+  margin-bottom:300px;
+ 
+}
+
+.box-1{
+  background-color:green;
+}
+
+.box-2{
+  background-color:yellow;
+}
+
+.box-3{
+  background-color:blue;
+}
+*/
+
+/*gsap 기본 끝*/
+
+/*stagger 시작*/
+/*
+body {
+  margin:0;
+  background-color: #111;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.box{
+  width:100px;
+  height:100px;
+  box-sizing:border-box;
+  border:10px solid grey;
+}
+
+.bg-green{
+  background-color:green;
+}
+
+.bg-grey{
+  background-color:#989898;
+}
+
+.bg-orange{
+  background-color:orange;
+}
+
+#demo{
+  font-size:0;
+  white-space:nowrap;
+}
+
+#demo > *{
+  display:inline-block;
+  white-space:nowrap;
+}
+
+*/
+/*stagger 끝*/
+
+/*텍스트 애니메이션 시작*/
+body{
+    margin:0;
+  }
+  
+  .section-1{
+    min-height:100vh;
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .section-1__text{
+    font-size:0;
+  }
+  
+  .section-1__text > *{
+    font-size:1rem;
+  }
+  
+  .section-1__text > span{
+    display:inline-block;
+    padding:.3rem 0;
+    border:1px solid red;
+    overflow:hidden;
+  }
+  
+  .section-1__text > span > span{
+    font-size:5rem;
+    display:block;
+  }
+  
+  /*텍스트 애니메이션 끝*/
