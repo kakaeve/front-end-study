@@ -1,0 +1,192 @@
+/* 폰트 시작 */
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+  }
+  
+  html {
+    font-family: 'LotteMartDream', sans-serif;
+  }
+  /* 폰트 끝 */
+  
+  /* 노말라이즈 시작 */
+  body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  
+  a {
+    color:inherit;
+    text-decoration:none;
+  }
+  /* 노말라이즈 끝 */
+  
+  /* 라이브러리 시작 */
+  .con {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .block {
+    display:block;
+  }
+  
+  .bg-red {
+    background-color:red;
+  }
+  
+  .bg-blue {
+    background-color:blue;
+  }
+  /* 라이브러리 끝 */
+  
+  /* 커스텀 시작 */
+  :root {
+    --site-width:1200px;
+    --body__background-image: linear-gradient(to right top, #f5f7fa, #c3cfe2);
+  }
+  
+  body {
+    background-image:var(--body__background-image);
+    min-height:100vh;
+  }
+  
+  .con-min-width {
+    min-width:var(--site-width);
+    padding:0 10px;
+  }
+  
+  .con {
+    width:var(--site-width);
+  }
+  
+  /* 탑바 시작 */
+  :root {
+    --top-bar__menu-box-1__background-image:linear-gradient(to bottom, #cfd9df, #e2ebf0);
+    --top-bar__menu-box-1__box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+    --top-bar__menu-box-1__li-hover-a__background-image:linear-gradient(to top, #4e5863 0%, #5e6874 60%);
+    --top-bar__menu-box-1__ul-li-a__color:#666;;
+    --top-bar__menu-box-1__ul-ul-li-hover-a__background-color:#4b545f;
+    --top-bar__menu-box-1__ul-ul__background-color: #5e6874;
+    --top-bar__menu-box-1__ul-ul-li__border-top-color:#6b727c;
+    --top-bar__menu-box-1__ul-ul-li__border-bottom-color:#575f6a;
+  }
+  
+  .top-bar > .con {
+    text-align:center;
+  }
+  
+  .top-bar__menu-box-1 {
+    text-align:center;
+    display:inline-block;
+    background-image:var(--top-bar__menu-box-1__background-image);
+    padding:0 20px;
+    border-radius:20px;
+    margin-top:100px;
+    box-shadow: var(--top-bar__menu-box-1__box-shadow);
+  }
+  
+  .top-bar__menu-box-1 ul > li {
+    position:relative;
+  }
+  
+  .top-bar__menu-box-1 > ul > li {
+    display:inline-block;
+  }
+  
+  .top-bar__menu-box-1 ul > li > a {
+    display:flex;
+    height:100px;
+    justify-content:center;
+    align-items:center;
+    font-style:italic;
+    font-weight:bold;
+    font-size:1.1rem;
+    white-space:nowrap;
+  }
+  
+  .top-bar__menu-box-1 ul > li > a:not(:only-child)::after{
+    content:"[+]";
+    display:inline-block;
+    width:25px;
+    text-align:right;
+  }
+  
+  .top-bar__menu-box-1 ul > li.hover > a:not(:only-child)::after{
+    content:"[-]";
+  }
+  
+  .top-bar__menu-box-1 > ul > li > a {
+    color:var(--top-bar__menu-box-1__ul-li-a__color);
+    padding-left:80px;
+    padding-right:80px;
+  }
+  
+  .top-bar__menu-box-1 > ul > li.hover > a, .top-bar__menu-box-1 > ul > li:hover > a {
+    background-image:var(--top-bar__menu-box-1__li-hover-a__background-image);
+    color:white;
+  }
+  
+  .top-bar__menu-box-1 > ul ul {
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:var(--top-bar__menu-box-1__ul-ul__background-color);
+    display:none;
+  }
+  
+  .top-bar__menu-box-1 > ul > li > ul {
+    width:100%;
+  }
+  
+  .top-bar__menu-box-1 > ul ul > li {
+    border-top: 1px solid var(--top-bar__menu-box-1__ul-ul-li__border-top-color);
+    border-bottom: 1px solid var(--top-bar__menu-box-1__ul-ul-li__border-bottom-color);
+  }
+  
+  .top-bar__menu-box-1 > ul ul > li > a {
+    color:white;
+  }
+  
+  .top-bar__menu-box-1 > ul li:hover > a, .top-bar__menu-box-1 > ul li.hover > a {
+    background-color:var(--top-bar__menu-box-1__ul-ul-li-hover-a__background-color);
+  }
+  
+  .top-bar__menu-box-1 ul > li.hover > ul {
+    display:block;
+  }
+  
+  .top-bar__menu-box-1 > ul ul ul {
+    left:100%;
+    top:0;
+  }
+  
+  .top-bar__menu-box-1 > ul ul ul > li > a {
+    padding-left:20px;
+    padding-right:20px;
+  }
+  
+  .top-bar__menu-box-1 > ul > li:last-child > ul ul {
+    left:auto;
+    right:100%;
+  }
+  /* 탑바 끝 */
+  
+  /* 커스텀 끝 */

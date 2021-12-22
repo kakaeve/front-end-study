@@ -1,0 +1,38 @@
+body, ul, li{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  
+  section{
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  section > ul{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+  }
+  
+  section > ul > li{
+    font-size:1.3rem;
+    font-weight:bold;
+  }
+  
+  section > ul > li:hover{
+    background-color:#afafaf;
+  }
+  
+  section > div{
+    width:100px;
+    height:10px;
+    top:500px;
+    left:-500px;
+    background-color:black;
+    position:absolute;
+    transition:all .3s;
+  }
