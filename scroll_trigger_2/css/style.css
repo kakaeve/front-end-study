@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    
+    transition:background 1s;
+  }
+  
+  body.tl1-is-active{
+    background-color:#676767;
+  }
+  
+  .con-min-width{
+    min-width:100%;
+  }
+  
+  .con{
+    width:1000px;
+    margin:0 auto;
+  }
+  
+  .flex{
+    display:flex;
+  }
+  
+  /*커스텀 시작*/
+  .section-1{
+    margin-top:1000px;
+    margin-bottom:1000px;
+    overflow:hidden;
+  }
+  /*커스텀 끝*/
